@@ -48,21 +48,21 @@ If you boot into windows instead of the boot option menu the boot order may have
 
 
 
-Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)
+**Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)**
 
 
-Update and upgrade your machine
-
+**Update and upgrade your machine
+**
 sudo apt update
 sudo apt upgrade
 
 
-Install the GCC compiler
+**Install the GCC compiler**
 
 sudo apt install build-essential
 
 
-Install the Nvidia driver 
+**Install the Nvidia driver **
 
  
 
@@ -84,7 +84,7 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 
 
-Install CUDA 12.8 toolkit
+**Install CUDA 12.8 toolkit**
 
  
 
@@ -130,7 +130,7 @@ sudo ldconfig
  
 
 
-Install cuDNN 8.9.7 libraries
+**Install cuDNN 8.9.7 libraries**
 
 
 (note: even though these libraries were released for Ubuntu 22.04 they are compatible with Ubuntu 26.04)
@@ -202,7 +202,7 @@ the library files install to the /usr/lib/x86_64-linux-gnu/ folder
 
 
 
-Install Tensorflow 2.15.0 libraries
+**Install Tensorflow 2.15.0 libraries**
 
 you need version 2.15.0 which works with CUDA 12.8. I got this info from this table: https://www.tensorflow.org/install/source#gpu
 (although the table offically says CUDA 12.2 works with tensorflow library 2.15.0, 12.8 works for me and in another guide for WSL, 12.5 works). It also mentions clang comipler.. this is not needed. We are installing prebuilt libraries.. the gcc compiler works fine.
@@ -223,7 +223,7 @@ the tensorflow libraries install into /usr/local/lib folder
 
 
 
-Install PixInsight for Linux
+**Install PixInsight for Linux**
 
 https://pixinsight.com/downloads/index.html
 select software distribution
@@ -237,8 +237,8 @@ tar -xf PI-linux-x64-1.9.3-20250402-c.tar.xz ( or whatever the latest version is
 sudo ./installer
 
 
-Configure PixInsight
-
+**Configure PixInsight
+**
 PixInsight installs its own Tensorflow libraries into the the /opt/PixInsight/bin/lib folder.
 
 Remove these libraries from the /opt/Pixinsight/bin/lib folder. Pixinsight will then use Tensorflow 2.15.0 libraries you just installed in the /usr/local/lib folder. These libraries work with CUDA 12.8.
@@ -260,7 +260,7 @@ you are done !!
 You can now go into PixInsight and install the RC Astro tools or Starnet++ to test Cuda acceleration
 
 
-Installation of future versions of PixInsight
+**Installation of future versions of PixInsight**
 
 Upon reinstalling PixInsight installs its own Tensorflow libraries. Remove them from the /opt/PixInsight/bin/lib folder . This ensures the 2.15.0 Tensorflow libraries located in the /usr/local/lib folder continue to be used.
 
@@ -278,8 +278,8 @@ after doing this you can restart PixInsight and keep GPU acceleration
 
  
 
-Solution if an instability occurs and nvidia-smi does not see your nvidia driver
-
+**Solution if an instability occurs and nvidia-smi does not see your nvidia driver
+**
 Sometimes an instability might occur. Cuda acceleration will not work and running nvidia-smi will not show your driver. In that case you need to remove and reinstall the Nvidia driver. Do the following:
 
 sudo apt-get purge -y 'nvidia*'
@@ -299,7 +299,7 @@ It should say a driver version  and CUDA version. Cuda acceleration should be re
 
 
 
-Special situation: Installing Kubuntu (KDE plasma desktop) if you already installed Ubuntu
+**Special situation: Installing Kubuntu (KDE plasma desktop) if you already installed Ubuntu**
 
 (I like the standard version)
 
