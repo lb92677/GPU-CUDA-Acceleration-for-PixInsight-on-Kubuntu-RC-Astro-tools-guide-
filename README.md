@@ -3,7 +3,7 @@ This guide enables GPU (CUDA) acceleration with Linux (Kubuntu and other Ubuntu 
 
 
 
-Install Kubuntu
+**Install Kubuntu**
 
 get a USB stick with 64 gb or greater
 
