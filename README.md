@@ -299,8 +299,8 @@ after doing this you can restart PixInsight and keep GPU acceleration
 
  
 
-**Solution if an instability occurs and nvidia-smi does not see your nvidia driver
-**
+**Solution if an instability occurs and nvidia-smi does not see your nvidia driver**
+
 Sometimes an instability might occur. Cuda acceleration will not work and running nvidia-smi will not show your driver. In that case you need to remove and reinstall the Nvidia driver. Do the following:
 
 sudo apt-get purge -y 'nvidia*'
