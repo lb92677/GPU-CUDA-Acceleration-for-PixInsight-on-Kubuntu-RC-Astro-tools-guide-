@@ -323,7 +323,7 @@ If all goes well StarXterminator will speed up. On my computer StarXterminator t
 
 
 
-Special situation if you use an NTFS drive or partition for your data
+**Special situation if you use an NTFS drive or partition for your data**
 
 Since many people install Kubuntu on a computer which first has windows installed, you may be using an NTFS drive or partition for your data since both Windows and Kubuntu can see it. If that is the case you may be using a slow ntfs driver called ntfs-3g. Kubuntu defaults to this. The new fast driver is ntfs3.
 
