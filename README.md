@@ -62,7 +62,7 @@ sudo apt upgrade
 sudo apt install build-essential
 
 
-****Install the Nvidia driver ****
+**Install the Nvidia driver**
 
  
 
