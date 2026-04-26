@@ -51,8 +51,8 @@ If you boot into windows instead of the boot option menu the boot order may have
 **Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)**
 
 
-**Update and upgrade your machine
-**
+**Update and upgrade your machine**
+
 sudo apt update
 sudo apt upgrade
 
