@@ -1,6 +1,6 @@
 # GPU-CUDA-Acceleration-for-PixInsight-on-Kubuntu-RC-Astro-tools-guide-
 This guide enables GPU (CUDA) acceleration with Linux (Kubuntu and other Ubuntu versions).  Kubuntu is a Linux version which has a Windows like environment and is what PixInsight recommends. It is updated to support Kubuntu 26.04 LTS.  It also supports Kubuntu 24.04 LTS.
-This guide enables GPU (CUDA) acceleration with Linux (Kubuntu and other Ubuntu versions). It was copied from my post in the PixInsight forum archive since the forum now only accepts posts about C++ or Java script development directly related to PixInsight.   Kubuntu is a Linux version which has a windows like environment and is what PixInsight recommends. The guide is updated with new drivers and libraries as of 11/25 and has been shown to work as of 3/26. 
+
 
 
 Install Kubuntu
@@ -13,17 +13,13 @@ Download rufus
 
 https://rufus.ie/downloads/
 
-download the Kubuntu 24.04 LTS version (the current stable version with long term support)
+download the Kubuntu 26.04 LTS version (the current stable version with long term support). If you want to install the former 24.04 LTS version you can download that instead. For clarity I will only refer to the 26.04 LTS version. 
  
 
-Download
-
-Get your Kubuntu Linux
-
- kubuntu.org
+go to kubuntu.org
 
 
-select the 24.04 LTS version
+select the 26.04 LTS version
 
 insert the USB stick in your computer.
 
@@ -55,7 +51,7 @@ If you boot into windows instead of the boot option menu the boot order may have
 Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)
 
 
-first update and upgrade your machine
+Update and upgrade your machine
 
 sudo apt update
 sudo apt upgrade
@@ -66,56 +62,43 @@ Install the GCC compiler
 sudo apt install build-essential
 
 
-Install Nvidia driver 580
+Install the Nvidia driver 
+
+ 
+
+The following command will pick the nvidia driver that is best suited for your system. In my case it selected the Nvidia 595 open driver
+
+sudo ubuntu-drivers install
 
 
-sudo apt install nvidia-driver-580
 sudo reboot
+
+
 
 check to see if it installed
 
 nvidia-smi
 
-It will say driver version 580.126.** and CUDA 13.0
-CUDA 13.0 is not actually installed. Nvidia-smi refers to the highest version CUDA driver that the Nvidia driver 580 can support.
+In my case it said driver version 595.58.03 and CUDA 13.2
+CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CUDA driver that the Nvidia driver 595 can support.
 
 
 
 Install CUDA 12.8 toolkit
 
-Click on the following URL. Cuda 12.8 will download.
-
-https://developer.download.nvidia.com/compute/cuda/12.8.0/local_installers/cuda_12.8.0_570.86.10_linux.run
-
  
-
-*** new test do not use
-
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
-
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-
-sudo apt-get update
-
-sudo apt-get -y install cuda-toolkit-12-8
-
- 
-
-***
-
-change to Downloads directorey
 
 cd ~/Downloads
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
+sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
 
-install the file
+wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda-repo-ubuntu2404-12-8-local_12.8.1-570.124.06-1_amd64.deb
 
-sudo bash ./cuda_12.8.0_570.86.10_linux.run
+sudo dpkg -i cuda-repo-ubuntu2404-12-8-local_12.8.1-570.124.06-1_amd64.deb
+sudo cp /var/cuda-repo-ubuntu2404-12-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-8
 
-
-during install it may say you already have a driver installed and recommend you remove this before continuing. Bypass this and select continue.
-
-It will ask you if you accept the above EULA.? Type accept.
-On the next screen if you see a CUDA driver such as 570.86.10 selected, unselect it using the space bar. Do not change the other options. Select Install at the bottom of the menu. The installation will take a little time.
 
 the cuda files install into /usr/local/cuda-12.8 (bin files install into /usr/local/cuda-12.8/bin and library files install into /usr/local/cuda-12.8/lib64) Path commands which follow in this guide do not need to specify what version of cuda you have installed, Kubuntu handles that for you.
 
@@ -144,10 +127,13 @@ echo "/usr/local/cuda/lib64" | sudo tee -a /etc/ld.so.conf
 sudo ldconfig
 
 
+ 
 
 
 Install cuDNN 8.9.7 libraries
-(note: even though these libraries were released for Ubuntu 22.04 they are compatible with Ubuntu 24.04.3)
+
+
+(note: even though these libraries were released for Ubuntu 22.04 they are compatible with Ubuntu 26.04)
 
 
 in your browser go to
@@ -177,7 +163,7 @@ agree to terms
 
 click on the following URL which will bring you to the cuDNN archives
 
-Download cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x
+https://developer.nvidia.com/rdp/cudnn-archive
 
 you will see a list, select "Download cuDNN v8.97 (December 5th, 2023) for CUDA 12.x"
 
@@ -288,37 +274,27 @@ sudo reboot
 
 after doing this you can restart PixInsight and keep GPU acceleration
 
-Installing future versions of Kubuntu
+ 
 
-If you install Kubuntu 25.10 instead of the 24.04 LTS version used in this guide, the only known difference is to use nvidia-driver-580-open instead of the proprietary nvidia-driver-580. Otherwise, follow the guide as written. For clarity, this guide sticks to the LTS version. If you choose the latest version, install the Nvidia driver as follows:
-
-sudo apt install nvidia-driver-580-open
-sudo reboot
-check to see if it installed
-
-nvidia-smi
-
-It will say driver version 580.126.** and CUDA 13.0
-
+ 
 
 Solution if an instability occurs and nvidia-smi does not see your nvidia driver
 
 Sometimes an instability might occur. Cuda acceleration will not work and running nvidia-smi will not show your driver. In that case you need to remove and reinstall the Nvidia driver. Do the following:
 
-sudo apt-get purge -y '^nvidia-.*'
+sudo apt-get purge -y 'nvidia*'
 sudo apt autoremove -y
 sudo apt autoclean
 
 sudo apt update
-sudo apt install -y build-essential dkms linux-headers-$(uname -r)
 
-sudo apt install -y nvidia-driver-580
+sudo ubuntu-drivers install
 
 sudo reboot
 
 nvidia-smi
 
-It should say driver version 580.126.** and CUDA 13.0. Cuda acceleration should be restored.
+It should say a driver version  and CUDA version. Cuda acceleration should be restored.
 
 
 
@@ -344,6 +320,7 @@ InputMethod=
 ctrl O and enter to write the file and ctrl X to exit
 
 If all goes well StarXterminator will speed up. On my computer StarXterminator took 40 seconds without GPU acceleration and 13.9 seconds with GPU acceleration. PixInsight is also faster under Kubuntu vs Windows 11
+
 
 
 Special situation if you use an NTFS drive or partition for your data
@@ -401,3 +378,4 @@ you should see
 /dev/nvme0n1p3 on /media/username/Data type ntfs3 (rw,nosuid,nodev,relatime,uid=1000,gid=1000,windows_names)
 
 this will have huge effect. This cut WPPP processing to about 1/2 the time using an NTFS drive
+
