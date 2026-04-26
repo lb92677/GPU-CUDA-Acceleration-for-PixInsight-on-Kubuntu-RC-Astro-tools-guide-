@@ -118,6 +118,7 @@ then go to the bottom of the file and copy the following and paste it to the fil
 
 
 export PATH="/usr/local/cuda/bin:$PATH"
+
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 
 
@@ -132,6 +133,7 @@ then add these environment commands
 
 
 echo "/usr/local/cuda/lib64" | sudo tee -a /etc/ld.so.conf
+
 sudo ldconfig
 
 
@@ -188,8 +190,11 @@ right click on properties and rename it to cudnn.deb
 then move the file into an install directory and unpack it
 
 mkdir cudnn_install
+
 mv cudnn.deb cudnn_install
+
 cd cudnn_install
+
 ar -x cudnn.deb
 
 this will unzip new files, one of which is data.tar.xz
@@ -203,7 +208,9 @@ new folders will extract . Change directory to the var/cudnn-local-repo-ubuntu22
 cd var/cudnn-local-repo-ubuntu2204-8.9.7.29/
 
 sudo dpkg -i libcudnn8_8.9.7.29-1+cuda12.2_amd64.deb
+
 sudo dpkg -i libcudnn8-dev_8.9.7.29-1+cuda12.2_amd64.deb
+
 sudo dpkg -i libcudnn8-samples_8.9.7.29-1+cuda12.2_amd64.deb
 
 the library files install to the /usr/lib/x86_64-linux-gnu/ folder
@@ -224,7 +231,9 @@ hit enter and it will download
 now install the Tensorflow libraries and create a dynamic link (pathway) in order for them to be used by PixInsight
 
 cd ~/Downloads
+
 sudo tar -C /usr/local -xzf libtensorflow-gpu-linux-x86_64-2.15.0.tar.gz
+
 sudo ldconfig /usr/local/lib
 
 the tensorflow libraries install into /usr/local/lib folder
@@ -242,6 +251,7 @@ PI-linux-x64-1.9.3-20250402-c.tar.xz is the latest version as of this post.
 to install:
 
 tar -xf PI-linux-x64-1.9.3-20250402-c.tar.xz ( or whatever the latest version is)
+
 sudo ./installer
 
 
@@ -291,7 +301,9 @@ after doing this you can restart PixInsight and keep GPU acceleration
 Sometimes an instability might occur. Cuda acceleration will not work and running nvidia-smi will not show your driver. In that case you need to remove and reinstall the Nvidia driver. Do the following:
 
 sudo apt-get purge -y 'nvidia*'
+
 sudo apt autoremove -y
+
 sudo apt autoclean
 
 sudo apt update
@@ -341,12 +353,15 @@ Eventually newer versions of Kubuntu will use this. Here is how to default to th
 open terminal
 
 check to see how your NTFS drive is mounted
+
 mount | grep ntfs.
+
 if you see "type fuseblk", you are using ntfs-3g, if you see "type ntfs3" you are fine
 
 find your drives UUID and mount point
 
 sudo lsblk -f
+
 you will see something like
 NAME FSTYPE LABEL UUID MOUNTPOINT
 nvme0n1
@@ -378,11 +393,14 @@ ctrl 0, ctrl X to write and exit
 now test
 unmount and remount the drive
 sudo umount /mnt/yourmountpointname ( in my case it is sudo umount /mnt/ext )
+
 sudo mount -a
 
 then check
 mount | grep ntfs
+
 you should see
+
 /dev/nvme0n1p3 on /media/username/Data type ntfs3 (rw,nosuid,nodev,relatime,uid=1000,gid=1000,windows_names)
 
 this will have huge effect. This cut WPPP processing to about 1/2 the time using an NTFS drive
