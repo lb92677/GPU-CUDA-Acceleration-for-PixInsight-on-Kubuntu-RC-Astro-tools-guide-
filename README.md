@@ -88,7 +88,7 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 **Install CUDA 12.8 toolkit**
 
-the following commands do this: download and configure the NVIDIA CUDA repository,trusts its packages (via GPG key) and installs CUDA 12.8
+the following commands do this: download and configure the NVIDIA CUDA repository,trust the packages (via GPG key) and install CUDA 12.8
  
 
 cd ~/Downloads
