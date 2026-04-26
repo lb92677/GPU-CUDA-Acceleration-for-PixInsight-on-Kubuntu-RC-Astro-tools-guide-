@@ -90,7 +90,7 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 the following code does this:
 
-configures NVIDIA’s CUDA repository,Trust its packages (via GPG key) and installs CUDA 12.8
+configures NVIDIA’s CUDA repository,trusts its packages (via GPG key) and installs CUDA 12.8
  
 
 cd ~/Downloads
