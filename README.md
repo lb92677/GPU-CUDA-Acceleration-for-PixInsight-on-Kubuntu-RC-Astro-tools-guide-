@@ -91,6 +91,7 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
  
 
 cd ~/Downloads
+
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
 
 sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
