@@ -242,10 +242,14 @@ the tensorflow libraries install into /usr/local/lib folder
 
 **Install PixInsight for Linux**
 
-https://pixinsight.com/downloads/index.html
+go to https://pixinsight.com/downloads/index.html
+
 select software distribution
+
 select the linux version
+
 Download it
+
 PI-linux-x64-1.9.3-20250402-c.tar.xz is the latest version as of this post.
 
 to install:
