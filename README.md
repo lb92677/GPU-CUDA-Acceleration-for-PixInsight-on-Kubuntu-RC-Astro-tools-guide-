@@ -54,6 +54,7 @@ If you boot into windows instead of the boot option menu the boot order may have
 **Update and upgrade your machine**
 
 sudo apt update
+
 sudo apt upgrade
 
 
