@@ -258,9 +258,8 @@ tar -xf PI-linux-x64-1.9.3-20250402-c.tar.xz ( or whatever the latest version is
 
 sudo ./installer
 
+**Configure PixInsight**
 
-**Configure PixInsight
-**
 PixInsight installs its own Tensorflow libraries into the the /opt/PixInsight/bin/lib folder.
 
 Remove these libraries from the /opt/Pixinsight/bin/lib folder. Pixinsight will then use Tensorflow 2.15.0 libraries you just installed in the /usr/local/lib folder. These libraries work with CUDA 12.8.
