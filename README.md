@@ -254,7 +254,7 @@ PI-linux-x64-1.9.3-20250402-c.tar.xz is the latest version as of this post.
 
 to install:
 
-tar -xf PI-linux-x64-1.9.3-20250402-c.tar.xz ( or whatever the latest version is)
+tar -xf PI-linux-x64-1.9.3-20250402-c.tar.xz
 
 sudo ./installer
 
