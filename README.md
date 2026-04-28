@@ -39,13 +39,11 @@ Kubuntu will boot up.
 
 You will see two choices.. try Kubuntu or install Kubuntu
 
-I selected to install Kbuntu with normal installation. Do not select install third-party software for graphics. You will install this later.
+I selected to install Kubuntu with normal installation. Do not select install third-party software for graphics. You will install this later.
 
-I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option menu (grub menu) when you boot your computer. When you reboot choose the Kubuntu option at the top. It defaults to formatting your main system (root) partition as ext4. Ext4 is stable but there is a newer format called btrfs which would enable snapshots of your root partition allowing you to timeshift (roll back) to a previous state if an instability occurs. I formatted my main system drive as btrfs and I have a separate drive for my astronomy data  formatted as ext4.
-When the grub menu boots up you can choose between booting into Kubuntu or Windows by selecting the windows option
-If you boot into Windows instead of the boot option menu the boot order may have changed in your bios and you will boot into Windows on startup. To change that, go into your bios and change the boot order for Kubuntu first and windows second.
-
-
+I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option (GRUB) menu when you boot your computer. During installation you are also given the option as to how to format your Kubuntu (root) partition. The default format is ext4. Ext4 is stable but there is a newer format called btrfs which would enable snapshots of your root partition allowing you to timeshift (roll back) to a previous state if an instability occurs. I formatted my main system drive as btrfs and I have a separate drive for my astronomy data formatted as ext4.
+When the booting up the boot option (GRUB) menu will appear and you can choose between booting into Kubuntu or Windows. 
+If your computer boots directly into Windows instead of the boot option (GRUB) menu the boot order may have changed in your bios. To change that, go into your bios and change the boot order for the Kubuntu first and Windows second.
 
 
 **Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)**
