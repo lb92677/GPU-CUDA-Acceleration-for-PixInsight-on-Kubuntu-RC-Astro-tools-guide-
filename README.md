@@ -41,8 +41,9 @@ You will see two choices.. try Kubuntu or install Kubuntu
 
 I selected to install Kubuntu with normal installation. Do not select install third-party software for graphics. You will install this later.
 
-I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option (GRUB) menu when you boot your computer. During installation you are also given the option as to how to format your Kubuntu (root) partition. The default format is ext4. Ext4 is stable but there is a newer format called Btrfs.This allows you to take snapshots of your Kubuntu partition. You could rollback if a bad update or instablilty occurs. You can also restore files that have been deleted. Note that these are snapshots, not true backups of your drive. 
-When the booting up the boot option (GRUB) menu will appear and you can choose between booting into Kubuntu or Windows. 
+I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option (GRUB) menu when you boot your computer.<br>
+During installation you are also given the option as to how to format your Kubuntu (root) partition. The default format is ext4. Ext4 is stable but there is a newer format called Btrfs.This allows you to take snapshots of your Kubuntu partition. You could rollback if a bad update or instablilty occurs. You can also restore files that have been deleted. Note that these are snapshots, not true backups of your drive.<br> 
+When the booting up the boot option (GRUB) menu will appear and you can choose between booting into Kubuntu or Windows.<br> 
 If your computer boots directly into Windows instead of the boot option (GRUB) menu the boot order may have changed in your bios. To change that, go into your bios and change the boot order for the Kubuntu first and Windows second.
 
 
