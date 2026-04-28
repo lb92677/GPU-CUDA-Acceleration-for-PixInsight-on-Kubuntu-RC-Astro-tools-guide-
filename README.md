@@ -220,7 +220,7 @@ the library files install to the /usr/lib/x86_64-linux-gnu/ folder
 **Install Tensorflow 2.15.0 libraries**
 
 you need version 2.15.0 which works with CUDA 12.8. I got this info from this table: https://www.tensorflow.org/install/source#gpu
-(although the table offically says CUDA 12.2 works with tensorflow library 2.15.0, 12.8 works for me and in another guide for WSL, 12.5 works). It also mentions clang comipler.. this is not needed. We are installing prebuilt libraries.. the gcc compiler works fine.
+(although the table offically says CUDA 12.2 works with tensorflow library 2.15.0, 12.8 works for me and in another guide for WSL, 12.5 works). It also mentions clang comipler.. this is not needed. We are installing prebuilt libraries.. the GCC compiler works fine.
 
 Now that I have explained this click the following URL which will download the tensorflow libraries version 2.15.0
 
