@@ -278,7 +278,7 @@ then ctrl O enter to write and ctrl X to exit.
 
 you are done !!
 
-You can now go into PixInsight and install the RC Astro tools or Starnet++ to test Cuda acceleration
+You can now go into PixInsight and install RC Astro tools to test Cuda acceleration
 
 
 **Installation of future versions of PixInsight**
