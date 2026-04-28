@@ -46,6 +46,7 @@ When the booting up the boot option (GRUB) menu will appear and you can choose b
 If your computer boots directly into Windows instead of the boot option (GRUB) menu the boot order may have changed in your bios. To change that, go into your bios and change the boot order for the Kubuntu first and Windows second.
 
 
+
 **Once Kubuntu is installed and you have booted into it, open the Kubuntu Konsole (terminal)**
 
 
