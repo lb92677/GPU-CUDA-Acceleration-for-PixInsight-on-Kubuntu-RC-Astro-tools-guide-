@@ -286,7 +286,7 @@ You can now go into PixInsight and install RC Astro tools to test Cuda accelerat
 
 **Installation of future versions of PixInsight**
 
-If you are installing a newer version of PixInsight follow the same instructions as a new install since the installer automatically detects and uninstalls the prevous version. See the above section "Installing PixInsight for Linux"
+If you are installing a newer version of PixInsight follow the same instructions as a new install since the installer automatically detects and uninstalls the prevous version. See the above section "Install PixInsight for Linux"
 
 Upon reinstalling PixInsight installs its own Tensorflow libraries. Remove them from the /opt/PixInsight/bin/lib folder . This ensures the 2.15.0 Tensorflow libraries located in the /usr/local/lib folder continue to be used.
 
