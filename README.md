@@ -252,11 +252,12 @@ select the linux version
 
 Download it
 
-PI-linux-x64-1.9.4-20260512-c.tar.xz is the latest version as of this post.
+PI-linux-x64-1.9.4-20260522-c.tar.xz is the latest version as of this post.
+
 
 to install:
 
-tar -xf PI-linux-x64-1.9.4-20260512-c.tar.xz
+tar -xf PI-linux-x64-1.9.4-20260522-c.tar.xz
 
 sudo ./installer
 
