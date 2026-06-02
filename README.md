@@ -109,7 +109,7 @@ sudo apt-get update
 sudo apt-get -y install cuda-toolkit-12-8
 
 
-the cuda files install into /usr/local/cuda-12.8 (bin files install into /usr/local/cuda-12.8/bin and library files install into /usr/local/cuda-12.8/lib64) Path commands which follow in this guide do not need to specify what version of cuda you have installed, Kubuntu handles that for you.
+the cuda files install into /usr/local/cuda-12.8 (bin files install into /usr/local/cuda-12.8/bin and library files install into /usr/local/cuda-12.8/lib64).  Path commands which follow in this guide do not need to specify what version of cuda you have installed, Kubuntu handles that for you.
 
 next edit the environment .bashrc file
 
