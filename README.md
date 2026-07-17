@@ -314,7 +314,11 @@ sudo rm /opt/PixInsight/bin/lib/libtensorflow*
 
 This ensures the 2.15.0 Tensorflow libraries located in the /usr/local/lib folder continue to be used
 
-If you mistakenly start PixInsight without removing the Tensorflow libraries close PixInsight, remove the Tensorflow libraries that PixInsight created and reboot:
+Cuda acceleration should now be enabled. 
+
+
+If you mistakenly start PixInsight without removing the Tensorflow libraries do this:
+close PixInsight, remove the Tensorflow libraries that PixInsight created and reboot:
 
 sudo rm /opt/PixInsight/bin/lib/libtensorflow*<br>
 sudo reboot
