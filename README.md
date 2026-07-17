@@ -287,8 +287,7 @@ You can now go into PixInsight and install RC Astro tools to test Cuda accelerat
 
 **Installation of future versions of PixInsight**
 
-If you are installing a newer version of PixInsight this sfollow the same instructions as a new install since the installer automatically detects and uninstalls the prevous version. 
-The directions are repeated here.
+Installing a newer version of PixInsight this follows the same instructions as a new install since the installer automatically detects and uninstalls the prevous version. 
 
 cd ~/Downloads
 
