@@ -65,6 +65,8 @@ sudo apt upgrade
 
 sudo apt install build-essential
 
+sudo reboot
+
 
 
 **Install the Nvidia driver**
