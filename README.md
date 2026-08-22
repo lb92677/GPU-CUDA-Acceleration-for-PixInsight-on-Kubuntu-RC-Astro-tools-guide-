@@ -117,7 +117,7 @@ ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 
 if no libraries list as not found you are good to go<br>
 
-if libcudart.so.12 lists as not found enter this
+if libcudart.so.12 lists as not found enter this<br>
 sudo apt get cuda-cudart-12-8<br>
 sudo ldconfig<br>
 <br>
