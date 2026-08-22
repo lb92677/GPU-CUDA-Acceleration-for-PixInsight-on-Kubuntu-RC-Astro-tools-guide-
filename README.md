@@ -37,7 +37,8 @@ then reboot .
 
 insert the Usb stick you created from Rufus
 
-Kubuntu will boot up.
+Kubuntu will boot up. 
+It will show you language and connection. Select your wireless connection . It will prompt you for the password.
 
 You will see two choices.. try Kubuntu or install Kubuntu
 
