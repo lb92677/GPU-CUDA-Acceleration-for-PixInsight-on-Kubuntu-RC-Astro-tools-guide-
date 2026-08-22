@@ -139,7 +139,7 @@ sudo ldconfig<br>
 <br>
 after you have installed any not found libraries you can check with this command again<br>
 <br>
-ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br?
+ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
 <br>
 it should show no libraries as not found.
 
