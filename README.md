@@ -128,7 +128,7 @@ sudo ldconfig<br>
 
 if libcufft.so.11 lists as not found enter this<br>
 sudo apt get libcufft-12-8<br>
-sudo ldconfig
+sudo ldconfig<br>
 <br>
 if libnvrtc.so.12 lists as not found enter this<br>
 sudo apt get cuda-nvrtc-12-8<br>
