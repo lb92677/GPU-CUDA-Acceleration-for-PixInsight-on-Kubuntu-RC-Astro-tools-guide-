@@ -167,23 +167,7 @@ tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
 sudo ./installer
 
 
-**Configure PixInsight**
 
-PixInsight installs its own Tensorflow libraries into the the /opt/PixInsight/bin/lib folder.
-
-Remove these libraries from the /opt/Pixinsight/bin/lib folder. Pixinsight will then use Tensorflow 2.15.0 libraries you just installed in the /usr/local/lib folder. These libraries work with CUDA 12.8.
-
-sudo rm /opt/PixInsight/bin/lib/libtensorflow*
-
-now edit the .bashrc file again and add another environment variable
-
-sudo nano ~/.bashrc
-
-scroll to bottom and paste
-
-export TF_FORCE_GPU_ALLOW_GROWTH="true"
-
-then ctrl O enter to write and ctrl X to exit.
 
 you are done !!
 
@@ -213,13 +197,9 @@ tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
 
 sudo ./installer
 
-Upon reinstalling PixInsight installs its own Tensorflow libraries. Remove them from the /opt/PixInsight/bin/lib folder using this command:
 
-sudo rm /opt/PixInsight/bin/lib/libtensorflow*
 
-This ensures the 2.15.0 Tensorflow libraries located in the /usr/local/lib folder continue to be used
-
-Cuda acceleration should now be enabled. 
+Cuda acceleration should continue to be enabled. 
 
 
 If you mistakenly start PixInsight without removing the Tensorflow libraries do this:
