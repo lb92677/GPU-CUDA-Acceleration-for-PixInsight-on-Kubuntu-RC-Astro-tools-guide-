@@ -117,23 +117,23 @@ ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 
 if no libraries list as not found you are good to go<br>
 
-if libcudart.so.12 lists as not found enter this<br>
+if libcudart.so.12 lists as not found enter this<br><br>
 sudo apt get cuda-cudart-12-8<br>
 sudo ldconfig<br>
 <br>
-if libcublas.so.12 or libcublasLt.so.12 list as not found enter this<br>
+if libcublas.so.12 or libcublasLt.so.12 list as not found enter this<br><br>
 sudo apt get libcublas-12-8<br>
 sudo ldconfig<br>
 <br>
-if libcufft.so.11 lists as not found enter this<br>
+if libcufft.so.11 lists as not found enter this<br><br>
 sudo apt get libcufft-12-8<br>
 sudo ldconfig<br>
 <br>
-if libnvrtc.so.12 lists as not found enter this<br>
+if libnvrtc.so.12 lists as not found enter this<br><br>
 sudo apt get cuda-nvrtc-12-8<br>
 sudo ldconfig<br>
 <br>
-if libcudnn.so.9 lists as not found  enter this<br>
+if libcudnn.so.9 lists as not found  enter this<br><br>
 sudo apt get libcudnn9-cuda-12<br>
 sudo ldconfig<br>
 <br>
