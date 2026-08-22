@@ -5,6 +5,8 @@ This guide enables GPU (CUDA) acceleration with Linux (Kubuntu and other Ubuntu 
 
 **Install Kubuntu**
 
+This assumes you are starting with a Windows computer and adding Kubuntu into it's own partition
+
 get a USB stick with 64 gb or greater
 
 First install Kubuntu .
