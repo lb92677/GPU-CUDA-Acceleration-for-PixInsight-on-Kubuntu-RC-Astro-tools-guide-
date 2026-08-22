@@ -19,7 +19,7 @@ download the Kubuntu 26.04 LTS version (the current stable version with long ter
 go to kubuntu.org
 
 
-select the 26.04 LTS version
+select the 26.04 LTS - Plasma 6 version
 
 insert the USB stick in your computer.
 
