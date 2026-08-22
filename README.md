@@ -437,14 +437,14 @@ you should see
 /dev/nvme0n1p3 on /media/username/Data type ntfs3 (rw,nosuid,nodev,relatime,uid=1000,gid=1000,windows_names)
 
 this will have huge effect. This cut WPPP processing to about 1/2 the time using an NTFS drive
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
