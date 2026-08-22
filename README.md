@@ -201,13 +201,7 @@ sudo ./installer
 Cuda acceleration should continue to be enabled. 
 
 
-If you mistakenly start PixInsight without removing the Tensorflow libraries do this:
-close PixInsight, remove the Tensorflow libraries that PixInsight created and reboot:
 
-sudo rm /opt/PixInsight/bin/lib/libtensorflow*<br>
-sudo reboot
-
-After rebooting, Cuda acceleration will be enabled.
 
 
 **Solution if an instability occurs and nvidia-smi does not see your nvidia driver**
