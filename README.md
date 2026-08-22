@@ -440,7 +440,16 @@ this will have huge effect. This cut WPPP processing to about 1/2 the time using
 
 
 
-Archived older instructions
+
+
+
+
+
+
+
+
+
+**Archived older instructions**
 
 **Install Kubuntu**
 
