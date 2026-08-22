@@ -45,9 +45,11 @@ You will see two choices.. try Kubuntu or install Kubuntu
 I selected to install Kubuntu with normal installation. Do not select install third-party software for graphics. You will install this later.
 
 I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option (GRUB) menu when you boot your computer.<br>
+You also choose a password during installation. If you want a simpler shorter password, it will warn you it is too short but will still let you use it.
 During installation you are also given the option as to how to format your Kubuntu (root) partition.<br> The installation defaults to ext4 which is stable but there is a newer format called btrfs. This format allows you to take snapshots of your Kubuntu partition when you install the app called Timeshift. You could rollback if a bad update or installation occurs. I prefer this format. Note that these are snapshots, not true backups of your drive.<br> You can also enable btrfs compression which will save you disk space.<br>
 When the booting up the boot option (GRUB) menu will appear and you can choose between booting into Kubuntu or Windows.<br> 
 If your computer boots directly into Windows instead of the boot option (GRUB) menu the boot order may have changed in your bios. To change that, go into your bios and change the boot order for the Kubuntu first and Windows second.
+
 
 
 
@@ -86,7 +88,7 @@ check to see if it installed
 
 nvidia-smi
 
-In my case it said driver version 595.58.03 and CUDA 13.2
+In my case it said driver version 595.84 and CUDA 13.2
 CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CUDA driver that the Nvidia driver 595 can support.
 
 
