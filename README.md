@@ -101,7 +101,7 @@ sudo apt-get update
 <br>
 <br>
 <br>
-**Install CUDA 12.8 and cudnn 9 libraries**
+**Install CUDA 12.8 and CUDNN 9 libraries**
 <br>
 sudo apt-get install -y cuda-libraries-12-8 libcudnn9-cuda-12 <br>
 sudo ldconfig
