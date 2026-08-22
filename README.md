@@ -93,7 +93,19 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 
 
-**Install CUDA 12.8 toolkit**
+**Install Nvidia CUDA repository for Ubuntu 26.04**
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2604/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+<br>
+<br>
+<br>
+**Install CUDA 12.8 and cudnn 9 libraries**
+<br>
+sudo apt-get install -y cuda-libraries-12-8 libcudnn9-cuda-12
+sudo ldconfig
+
 
 the following commands do this: download and configure the NVIDIA CUDA repository,trust the packages (via GPG key) and install CUDA 12.8
  
