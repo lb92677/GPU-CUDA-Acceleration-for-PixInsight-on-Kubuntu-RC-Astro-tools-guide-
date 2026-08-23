@@ -94,9 +94,9 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 
 **Install Nvidia CUDA repository for Kubuntu 26.04**<br><br>
-(substitute ubuntu2404 in the following wget command if you are installing Kubuntu 24.04)
+(note that the following wget comment uses ubuntu2404 which has the needed CUDA 12.8 packages for Kubuntu 26.04 and Kubuntu 24.04)
 
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2604/x86_64/cuda-keyring_1.1-1_all.deb<br>
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb<br>
 <br>
 sudo dpkg -i cuda-keyring_1.1-1_all.deb<br>
 <br>
