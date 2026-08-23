@@ -111,7 +111,7 @@ sudo apt-get update
 <br>
 sudo apt-get install -y cuda-libraries-12-8 libcudnn9-cuda-12<br>
 <br>
-sudo ld config<br>
+sudo ldconfig<br>
 <br>
 **Verify you have all the required libraries**<br>
 <br>
