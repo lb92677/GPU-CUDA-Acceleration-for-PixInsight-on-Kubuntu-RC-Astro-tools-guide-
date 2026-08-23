@@ -118,7 +118,7 @@ sudo ldconfig<br>
 enter this command:<br>
 ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
 
-if no libraries list as not found you are good to go<br>
+if no libraries list as not found you are done with this section<br>
 
 if libcudart.so.12 lists as not found enter<br><br>
 sudo apt install cuda-cudart-12-8<br>
