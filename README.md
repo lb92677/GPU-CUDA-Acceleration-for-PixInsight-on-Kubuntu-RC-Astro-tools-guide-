@@ -110,10 +110,9 @@ sudo apt-get install -y cuda-libraries-12-8 libcudnn9-cuda-12<br>
 <br>
 sudo ld config<br>
 <br>
-<br>
 **Verify you have all the required libraries**<br>
 <br>
-ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
+ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
 
 if no libraries list as not found you are good to go<br>
 
