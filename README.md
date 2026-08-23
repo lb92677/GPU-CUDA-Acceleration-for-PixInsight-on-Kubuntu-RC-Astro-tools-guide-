@@ -115,7 +115,7 @@ sudo ld config<br>
 <br>
 **Verify you have all the required libraries**<br>
 <br>
-enter this command:
+enter this command:<br>
 ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
 
 if no libraries list as not found you are good to go<br>
