@@ -219,14 +219,16 @@ sudo apt autoclean
 
 sudo apt update
 
+sudo apt install -y linux-headers-$(uname -r)
+
 sudo ubuntu-drivers install
+
 
 sudo reboot
 
 nvidia-smi
 
 It should say a driver version  and CUDA version. Cuda acceleration should be restored.
-
 
 
 
