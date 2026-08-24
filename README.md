@@ -42,7 +42,7 @@ It will show you language and connection. Select your wireless connection . It w
 
 You will see two choices.. try Kubuntu or install Kubuntu
 
-I selected to install Kubuntu with normal installation. Do not select install third-party software for graphics. You will install this later.
+I selected to install Kubuntu with normal installation. 
 
 I selected Kubuntu to install alongside Windows 11. I then dragged the divider to allocate the amount of drive space I wanted for Kubuntu. This will install a boot option (GRUB) menu when you boot your computer.<br>
 You also choose a password during installation. If you want a simpler shorter password, it will warn you it is too short but will still let you use it.
