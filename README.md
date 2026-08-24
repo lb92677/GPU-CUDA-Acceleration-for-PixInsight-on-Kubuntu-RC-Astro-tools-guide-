@@ -94,8 +94,7 @@ CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CU
 
 
 **Install Nvidia CUDA repository for Kubuntu 26.04**<br><br>
-(note that the following wget comment uses ubuntu2404 which points to a repository containing all the CUDA and CUDNN  libraries needed for RC Astro tools)
-
+(note the following command uses ubuntu2404 has all the needed libraries in the CUDA repository)<br>
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb<br>
 <br>
 sudo dpkg -i cuda-keyring_1.1-1_all.deb<br>
