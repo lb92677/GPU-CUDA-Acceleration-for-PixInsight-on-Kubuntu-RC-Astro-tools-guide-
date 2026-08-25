@@ -169,12 +169,11 @@ if libcudnn.so.9 lists as not found  enter <br><br>
 sudo apt install libcudnn9-cuda-12<br>
 sudo ldconfig<br>
 <br>
-after you have installed any not found libraries you can check with this command again<br>
+after you have installed any not found libraries you can check with this command again
 <br>
 ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 <br>
 it should show no libraries as not found.<br>
-
 
 you are done !!<br>
 
