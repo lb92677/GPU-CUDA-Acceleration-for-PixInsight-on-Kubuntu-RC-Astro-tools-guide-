@@ -172,7 +172,7 @@ after you have installed any not found libraries you can check with this command
 <br>
 ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 <br>
-it should show no libraries as not found.<br><br>
+it should show no libraries as not found.<br>
 
 
 you are done !!<br>
