@@ -146,6 +146,8 @@ ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'no
 
 if no libraries list as not found you are done !
 
+for any libraries listed as not found do the following:
+
 if libcudart.so.12 lists as not found enter<br><br>
 sudo apt install cuda-cudart-12-8<br>
 sudo ldconfig<br>
@@ -168,7 +170,7 @@ sudo ldconfig<br>
 <br>
 after you have installed any not found libraries you can check with this command again<br>
 <br>
-ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
+ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 <br>
 it should show no libraries as not found.<br><br>
 
