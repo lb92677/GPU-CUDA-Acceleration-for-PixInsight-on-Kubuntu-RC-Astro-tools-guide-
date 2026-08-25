@@ -144,7 +144,7 @@ follow instructions on the RC Astro site
 enter this command:<br>
 ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 
-if no libraries list as not found you can proceed with the installaton of Pixinsight for Linux in the next section<br>
+if no libraries list as not found you are done !
 
 if libcudart.so.12 lists as not found enter<br><br>
 sudo apt install cuda-cudart-12-8<br>
