@@ -112,11 +112,37 @@ sudo apt-get update
 sudo apt-get install -y cuda-libraries-12-8 libcudnn9-cuda-12<br>
 <br>
 sudo ldconfig<br>
-<br>
+<br><br>
+
+**Install PixInsight for Linux**
+
+cd ~/Downloads
+
+go to https://pixinsight.com/downloads/index.html
+
+select software distribution
+
+select the linux version
+
+Download it
+
+PI-linux-x64-1.9.4-20260621-c.tar.xz is the latest version as of this post.
+
+
+to install:
+
+tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
+
+sudo ./installer<br>
+
+**Install the RC-Astro suite in PixInsight**<br>
+follow instructions on the RC Astro site
+
+
 **Verify you have all the required libraries**<br>
 <br>
 enter this command:<br>
-ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
+ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
 
 if no libraries list as not found you can proceed with the installaton of Pixinsight for Linux in the next section<br>
 
@@ -147,33 +173,12 @@ ldd /opt/rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'<br>
 it should show no libraries as not found.<br><br>
 
 
-**Install PixInsight for Linux**
-
-cd ~/Downloads
-
-go to https://pixinsight.com/downloads/index.html
-
-select software distribution
-
-select the linux version
-
-Download it
-
-PI-linux-x64-1.9.4-20260621-c.tar.xz is the latest version as of this post.
-
-
-to install:
-
-tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
-
-sudo ./installer
-
 
 
 
 you are done !!
 
-You can now go into PixInsight and install RC Astro tools to test Cuda acceleration
+
 
 
 **Installation of future versions of PixInsight**
