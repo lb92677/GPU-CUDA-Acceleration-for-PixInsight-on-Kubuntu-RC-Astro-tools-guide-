@@ -136,6 +136,7 @@ tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
 sudo ./installer<br>
 
 **Install the RC-Astro suite in PixInsight**<br>
+<br>
 follow instructions on the RC Astro site
 
 
