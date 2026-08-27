@@ -229,7 +229,6 @@ sudo apt install -y linux-headers-$(uname -r)
 
 sudo ubuntu-drivers install
 
-
 sudo reboot
 
 nvidia-smi
@@ -674,6 +673,8 @@ sudo apt autoremove -y
 sudo apt autoclean
 
 sudo apt update
+
+sudo apt install -y linux-headers-$(uname -r)
 
 sudo ubuntu-drivers install
 
