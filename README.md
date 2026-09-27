@@ -88,7 +88,7 @@ check to see if it installed and determine the driver version installed
 
 nvidia-smi
 
-In my case it said driver version 595.84. The newest version of PixInsight (1.95)  includes all the drivers for CUDA acceleration that work on newer Nvidia processors. If after running nvidia-smi the version is 560.XX or higher you can proceed with PixInsight installaton. Jump to **Install PixInsight for Linux**. If you have an older GPU which picks an Nvidia driver below 560.xx you have two choices for CUDA acceleration. Keep PixInsight verion 1.94 and follow the instructions below. The other choice is go to the RC Astro site under GPU acceleration for ML Powered tools and install the standalone CLI verison of RC Astro tools. Follow the instructions on the RC Astro site.
+In my case it said driver version 595.84. The newest version of PixInsight (1.95)  includes all the drivers for CUDA acceleration that work on newer Nvidia processors. If after running nvidia-smi the version is 560.XX or higher you can proceed with PixInsight installaton. Jump to **Install PixInsight for Linux**. If you have an older GPU which picks an Nvidia driver below 560.xx you have two choices for CUDA acceleration. Install PixInsight verion 1.94 and follow the instructions below. The other choice is to install PixInsight version 1.95 then go to the RC Astro site and install the standalone CLI verison of RC Astro tools. Follow the instructions on the RC Astro site.
 
 
 
