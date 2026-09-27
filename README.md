@@ -84,12 +84,11 @@ sudo reboot
 
 
 
-check to see if it installed
+check to see if it installed and determine the driver version installed
 
 nvidia-smi
 
-In my case it said driver version 595.84 and CUDA 13.2
-CUDA 13.2 is not actually installed. Nvidia-smi refers to the highest version CUDA driver that the Nvidia driver 595 can support.
+In my case it said driver version 595.84. The newest version of PixInsight (1.95)  includes all the drivers for CUDA acceleration that work on newer Nvidia processors. If after running nvidia-smi the version is 560.XX or higher you can proceed with PixInsight installaton. Jump to **Install PixInsight for Linux**. If you have an older GPU which picks an Nvidia driver below 560.xx you have two choices for CUDA acceleration. Keep PixInsight verion 1.94 and follow the instructions below. The other choice is go to the RC Astro site under GPU acceleration for ML Powered tools and install the standalone CLI verison of RC Astro tools. Follow the instructions on the RC Astro site.
 
 
 
@@ -126,12 +125,12 @@ select the linux version
 
 Download it
 
-PI-linux-x64-1.9.4-20260621-c.tar.xz is the latest version as of this post.
+PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz is the latest version as of this post.
 
 
 to install:
 
-tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
+tar -xf PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz
 
 sudo ./installer<br>
 
@@ -196,12 +195,12 @@ select the linux version
 
 Download it
 
-PI-linux-x64-1.9.4-20260621-c.tar.xz is the latest version as of this post.
+PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz is the latest version as of this post.
 
 
 to install:
 
-tar -xf PI-linux-x64-1.9.4-20260621-c.tar.xz
+tar -xf PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz
 
 sudo ./installer
 
