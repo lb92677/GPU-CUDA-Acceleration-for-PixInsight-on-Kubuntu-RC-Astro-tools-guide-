@@ -125,12 +125,12 @@ select the linux version
 
 Download it
 
-PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz is the latest version as of this post.
+PI-linux-x64-gpu-1.9.5-20260927-c.tar.xz is the latest version as of this post.
 
 
 to install:
 
-tar -xf PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz
+tar -xf PI-linux-x64-gpu-1.9.5-20260927-c.tar.xz
 
 sudo ./installer<br>
 
@@ -195,12 +195,12 @@ select the linux version
 
 Download it
 
-PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz is the latest version as of this post.
+PI-linux-x64-gpu-1.9.5-20260927-c.xz is the latest version as of this post.
 
 
 to install:
 
-tar -xf PI-linux-x64-gpu-1.9.5-20260925-c.tar.xz
+tar -xf PI-linux-x64-gpu-1.9.5-20260927-c.tar.xz
 
 sudo ./installer
 
