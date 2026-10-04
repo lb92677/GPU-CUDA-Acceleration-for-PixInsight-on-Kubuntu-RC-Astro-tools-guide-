@@ -144,7 +144,7 @@ follow instructions on the RC Astro site<br>
 <br>
 enter this command:<br>
 
-ldd /opt/PixInsight/bin/lib-rc-astro/libonnxruntime_providers_cuda.so | grep 'not found'
+ldd /opt/PixInsight/bin/lib-rc-astro/librca_onnxruntime_providers_cuda.so | grep 'not found'
 
 if no libraries list as not found you are done !
 
